@@ -1,10 +1,14 @@
 import {FormContext} from "../contexts/FormContext";
-import {useCallback, useContext} from "react";
+import {useCallback, useContext, useEffect} from "react";
 import {createClearAction} from "../reducers/FormReducer";
 
 export function Header() {
     const {dispatch, state} = useContext(FormContext);
-    const companyName = state['company-name'];
+    const companyName = state['company-name'] || '';
+
+    useEffect(() => {
+        window.document.title = `${companyName}${companyName && ' - '}Interview Checklist`;
+    }, [companyName]);
 
     const onClear = useCallback(() => {
         if (window.confirm("Do you really want to clear the form?")) {

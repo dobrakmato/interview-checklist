@@ -2,12 +2,11 @@ import React, {useCallback, useEffect, useRef, useState} from "react";
 import {Input} from "../Input";
 import {Suggestions} from "../Suggestions";
 import {cyrb53} from "../../hash";
-import {TrashIcon} from "../Icons/TrashIcon";
 
 const ListLine = ({title, onRemove}) => {
     return <div>
         {title}
-        <button tabIndex={"-1"} onClick={onRemove}><TrashIcon/></button>
+        <button tabIndex={"-1"} onClick={onRemove}>✕ </button>
     </div>
 };
 
