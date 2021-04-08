@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import data from './data.json';
+import {Section} from "./components/Section";
+import {useFormReducer} from "./reducers/FormReducer";
+import {FormContext} from "./contexts/FormContext";
+import {Header} from "./components/Header";
+
+function FormStoreProvider({children, interviewId}) {
+    const [state, dispatch] = useFormReducer(interviewId);
+
+    // todo: implement actual load and save logic
+
+    return <FormContext.Provider value={{dispatch, state}}>
+        {children}
+    </FormContext.Provider>
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const interviewId = 0;
+
+    return <FormStoreProvider interviewId={interviewId}>
+        <Header/>
+        <main>
+            {data.sections.map(it => <Section key={it.id} {...it}/>)}
+        </main>
+    </FormStoreProvider>;
 }
 
 export default App;

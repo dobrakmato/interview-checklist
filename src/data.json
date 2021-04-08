@@ -1,0 +1,421 @@
+{
+  "sections": [
+    {
+      "__tocskip": true,
+      "id": "interview",
+      "questions": [
+        {
+          "id": "company-name",
+          "title": "Company name",
+          "description": "How would you know which entry is form which company?",
+          "type": "line"
+        }
+      ]
+    },
+    {
+      "id": "me",
+      "name": "Me",
+      "questions": [
+        {
+          "id": "my-responsibilities",
+          "title": "What will be my responsibilities?",
+          "description": "What will I do? Do I need to communicate with a client? Do I need to attend meetings?",
+          "type": "list",
+          "suggestions": [
+            "programming",
+            "code review",
+            "teach leading",
+            "documentation",
+            "testing"
+          ]
+        },
+        {
+          "id": "who-i-report-to",
+          "title": "Who will I report to?",
+          "description": "My manager? Project manager? Scrum master? Senior colleague? Nobody?",
+          "type": "text",
+          "suggestions": [
+            "manager",
+            "project-manager",
+            "scrum master",
+            "nobody"
+          ]
+        },
+        {
+          "id": "what-are-your-expectations",
+          "title": "What are your expectations of me?",
+          "type": "text",
+          "suggestions": [
+            "programming",
+            "documentation",
+            "mentoring juniors"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "company",
+      "name": "Company",
+      "questions": [
+        {
+          "id": "biggest-challenges",
+          "title": "What are the biggest challenges your team is currently facing?",
+          "description": "Technological challenges, personal, any type of challenge and how they handle it.",
+          "type": "text"
+        },
+        {
+          "id": "costumer-benefit-from-product",
+          "title": "How do customers benefit from your product?",
+          "description": "Show that you care about customers and quality of end product",
+          "type": "text"
+        },
+        {
+          "id": "what-technologies-are-you-using",
+          "title": "What technologies are you using and why?",
+          "description": "Who has chosen the specific technology? Why? And how are they satisfied with it?",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "code-quality",
+      "name": "Code quality",
+      "questions": [
+        {
+          "id": "uses-automatic-formatter",
+          "title": "Do you use automatic code formatter?",
+          "type": "checkbox",
+          "label": "Yes, we automatic code formatter."
+        },
+        {
+          "id": "who-chose-codestyle",
+          "title": "How you decided on code style rules?",
+          "type": "text",
+          "suggestions": [
+            "standard",
+            "voting",
+            "tech lead",
+            "manager"
+          ]
+        },
+        {
+          "id": "how-is-code-style-enforced",
+          "title": "How is code style enforced?",
+          "description": "When is the linter / formatter run? Is it automatic?",
+          "type": "text",
+          "suggestions": [
+            "pre commit hook",
+            "ci/cd",
+            "manually run linter/formatter"
+          ]
+        },
+        {
+          "id": "do-code-reviews",
+          "title": "Do you do code reviews?",
+          "type": "checkbox",
+          "label": "Yes, we do code review."
+        },
+        {
+          "id": "do-automated-tests",
+          "title": "Do you use automated tests?",
+          "type": "checkbox",
+          "label": "Yes, we use automated tests."
+        },
+        {
+          "id": "do-use-ci-cd",
+          "title": "Do you use CI/CD pipeline?",
+          "type": "checkbox",
+          "label": "Yes, we use CI/CD pipeline."
+        },
+        {
+          "id": "how-are-integrations-documented",
+          "title": "How are interfaces between services documented?",
+          "type": "text",
+          "suggestions": [
+            "swagger",
+            "jira/confluence",
+            "not documented"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "project",
+      "name": "Project",
+      "questions": [
+        {
+          "id": "project-architecture",
+          "title": "What architecture do you use for this project and why?",
+          "description": "Monolith / microservices? Why such architecture?",
+          "type": "text",
+          "suggestions": [
+            "monolith",
+            "microservices"
+          ]
+        },
+        {
+          "id": "project-documentation-status",
+          "title": "How much of the project is documented? (estimate)",
+          "type": "text",
+          "suggestions": [
+            "100%",
+            "75%",
+            "50%",
+            "20%",
+            "0%"
+          ]
+        },
+        {
+          "id": "project-test-status",
+          "title": "How much of the project is covered by automated tests? (estimate)",
+          "description": "Unit tests, integration tests, UI tests. Any kind of test.",
+          "type": "text",
+          "suggestions": [
+            "100%",
+            "75%",
+            "50%",
+            "20%",
+            "0%"
+          ]
+        },
+        {
+          "id": "project-test-type",
+          "title": "What type of tests do you use?",
+          "type": "text",
+          "suggestions": [
+            "unit",
+            "integration",
+            "stress",
+            "ui/e2e",
+            "chaos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "communication",
+      "name": "Communication",
+      "questions": [
+        {
+          "id": "team-size",
+          "title": "How big are teams?",
+          "type": "text",
+          "suggestions": [
+            "5 people",
+            "10 people",
+            "25 people",
+            "50 people"
+          ]
+        },
+        {
+          "id": "team-structure",
+          "title": "How are teams structured? Do you have senior developers in every team?",
+          "type": "text",
+          "suggestions": [
+            "seniors",
+            "project manager",
+            "scrum master",
+            "juniors",
+            "designers",
+            "analysts",
+            "test automation",
+            "testers",
+            "qa"
+          ]
+        },
+        {
+          "id": "team-work-schedule",
+          "title": "How is the team work schedule?",
+          "description": "Are members flexible? Do they have fixed time meetings? Fixed work hours? Are they able to communicate asynchronously?",
+          "type": "text",
+          "suggestions": [
+            "flexible",
+            "non-flexible",
+            "asynchronous communication"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "project-management",
+      "name": "Project management",
+      "questions": [
+        {
+          "id": "pm-every-task-documented",
+          "title": "Is every task documented in Issue Tracker before implementation is started?",
+          "type": "checkbox",
+          "label": "Yes, we document tasks first."
+        },
+        {
+          "id": "pm-use-jira-kanban",
+          "title": "Do you use JIRA / Trello / Kanban board?",
+          "type": "checkbox",
+          "label": "Yes, we use JIRA / Trello / Kanban board."
+        },
+        {
+          "id": "pm-how-is-project-managed",
+          "title": "How are projects managed? Do you use any specific methodologies?",
+          "type": "text",
+          "suggestions": [
+            "scrum",
+            "agile",
+            "waterfall"
+          ]
+        },
+        {
+          "id": "pm-who-communicates-with-a-client",
+          "title": "Who communicates with a client?",
+          "description": "Is this also a responsibility of developer?",
+          "type": "text",
+          "suggestions": [
+            "project manager",
+            "product owner",
+            "scrum master",
+            "developers"
+          ]
+        },
+        {
+          "id": "pm-how-often-talk-to-client",
+          "title": "How often do you talk to client?",
+          "type": "text",
+          "suggestions": [
+            "each day",
+            "each week",
+            "each sprint",
+            "rarely"
+          ]
+        },
+        {
+          "id": "pm-who-decides-that-the-project-is-done",
+          "title": "Who decides when the project is done? What about technical debt?",
+          "description": "The functionality might be implemented but in a hacky way? What happens next?",
+          "type": "text",
+          "suggestions": [
+            "project manager",
+            "product owner",
+            "scrum master",
+            "developers"
+          ]
+        },
+        {
+          "id": "pm-how-are-tasks-prioritized",
+          "title": "How are tasks prioritized & who prioritizes them?",
+          "description": "Also ask about technical tasks? Technical debt again?",
+          "type": "text",
+          "suggestions": [
+            "fix-bugs-first",
+            "client",
+            "project manager",
+            "product owner",
+            "scrum master",
+            "developers"
+          ]
+        },
+        {
+          "id": "pm-how-are-tasks-estimated",
+          "title": "How are tasks estimated & who estimates them?",
+          "type": "text",
+          "suggestions": [
+            "project manager",
+            "tech lead",
+            "developers",
+            "client"
+          ]
+        },
+        {
+          "id": "pm-what-happens-when-estimate-turns-incorrect",
+          "title": "What happens when estimated turns out to be incorrect?",
+          "description": "How did you handle such situations in past? How do you communicated it to client?",
+          "type": "text"
+        },
+        {
+          "id": "pm-how-determine-task-is-done",
+          "title": "How and who determines that the task is done and workign correctly?",
+          "type": "text",
+          "suggestions": [
+            "product owner",
+            "project manager",
+            "client",
+            "automated tests",
+            "testers",
+            "developers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deployment",
+      "name": "Deployment",
+      "questions": [
+        {
+          "id": "how-does-release-process-work",
+          "title": "How do you release code to production?",
+          "description": "Is it automatic? How often? How do we know that the software has no bugs?",
+          "type": "text",
+          "suggestions": [
+            "automatic",
+            "manual",
+            "CI/CD",
+            "each week",
+            "each month",
+            "each year"
+          ]
+        },
+        {
+          "id": "where-are-applications-deployed",
+          "title": "Where are applications deployed?",
+          "type": "text",
+          "suggestions": [
+            "cloud provider",
+            "k8s",
+            "vps",
+            "company servers"
+          ]
+        },
+        {
+          "id": "who-manages-deployments",
+          "title": "Who manages deployments and provides operations support?",
+          "type": "text",
+          "suggestions": [
+            "managed cloud",
+            "ops team",
+            "developers",
+            "nobody"
+          ]
+        },
+        {
+          "id": "how-do-you-retrieve-logs-from-production",
+          "title": "How do you retrieve logs from production?",
+          "description": "Do you? Why not? What if you had to due to a bug in production?",
+          "type": "text",
+          "suggestions": [
+            "ELK/Fluentd/LogDNA",
+            "need to access servers"
+          ]
+        },
+        {
+          "id": "do-you-use-exception-loggers",
+          "title": "Do you use exception trackers?",
+          "description": "Have it ever helped in fixing the bug in production? Why not?",
+          "type": "text",
+          "suggestions": [
+            "yes",
+            "no"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "feedback",
+      "name": "Feedback",
+      "questions": [
+        {
+          "id": "feedback-for-me",
+          "title": "Feedback for me",
+          "description": "Any feedback for me?",
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
